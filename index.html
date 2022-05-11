@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>GARAGE</title>
+</head>
+<body>
+    <section class="showcase">
+      <header> 
+          <h2 class="logo">BMW<img src="logo3.png" width="30px" height="30px"></h2>
+          <div class="toggle"></div>
+      </header>
+
+      <video src="cover2.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+          <h2>Never stop</h2>
+          <h3>THE NEW LIGHT<br> ON THE ROAD</h3>
+          <p>DRIVING PLEASURE UNMATCHED</p>
+          <a href="showcase.html">Explore</a>
+      </div>
+
+      <ul class="social">
+         <li><a href="https://www.facebook.com/BMW"><img src="facebook-logo-png-white-i6-300x300.png" width="30px" height="30px"></a></li>
+         <li><a href="https://twitter.com/bmw"><img src="white-twitter-logo-png-2.png" width="30px" height="30px"></a></li>
+         <li><a href="https://www.instagram.com/bmw/"><img src="White.png" width="30px" height="30px"></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="https://www.bmw.com/en/magazine.html">Magazine</a></li>
+            <li><a href="https://www.bmw.com/en/podcasts-overview.html">Podcast</a></li>
+            <li><a href="https://www.bmw.com/en/events.html">Events</a></li>
+            <li><a href="https://www.bmw.com/en/events/esports-hub.html">Esports</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', ()=>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
